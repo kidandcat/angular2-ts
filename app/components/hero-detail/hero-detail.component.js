@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+//PWD: app/components/hero-detail/
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
-var hero_service_1 = require('../../services/hero/hero.service');
+var hero_service_1 = require('services/hero/hero.service');
 var HeroDetailComponent = (function () {
     function HeroDetailComponent(heroService, routeParams) {
         this.heroService = heroService;
@@ -28,12 +29,13 @@ var HeroDetailComponent = (function () {
     HeroDetailComponent = __decorate([
         core_1.Component({
             selector: 'my-hero-detail',
-            templateUrl: 'hero-detail.component.html',
-            styleUrls: ['hero-detail.component.css']
+            templateUrl: 'app/components/hero-detail/hero-detail.component.html',
+            styleUrls: ['app/components/hero-detail/hero-detail.component.css']
         }), 
-        __metadata('design:paramtypes', [hero_service_1.HeroService, router_deprecated_1.RouteParams])
+        __metadata('design:paramtypes', [(typeof (_a = typeof hero_service_1.HeroService !== 'undefined' && hero_service_1.HeroService) === 'function' && _a) || Object, router_deprecated_1.RouteParams])
     ], HeroDetailComponent);
     return HeroDetailComponent;
+    var _a;
 }());
 exports.HeroDetailComponent = HeroDetailComponent;
 //# sourceMappingURL=hero-detail.component.js.map

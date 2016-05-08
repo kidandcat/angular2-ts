@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+//PWD: app/components/dashboard/
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
-var hero_service_1 = require('../../services/hero/hero.service');
+var hero_service_1 = require('services/hero/hero.service');
 var DashboardComponent = (function () {
     function DashboardComponent(router, heroService) {
         this.router = router;
@@ -29,12 +30,13 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'my-dashboard',
-            templateUrl: 'dashboard.component.html',
-            styleUrls: ['dashboard.component.css']
+            templateUrl: 'app/components/dashboard/dashboard.component.html',
+            styleUrls: ['app/components/dashboard/dashboard.component.css']
         }), 
-        __metadata('design:paramtypes', [router_deprecated_1.Router, hero_service_1.HeroService])
+        __metadata('design:paramtypes', [router_deprecated_1.Router, (typeof (_a = typeof hero_service_1.HeroService !== 'undefined' && hero_service_1.HeroService) === 'function' && _a) || Object])
     ], DashboardComponent);
     return DashboardComponent;
+    var _a;
 }());
 exports.DashboardComponent = DashboardComponent;
 //# sourceMappingURL=dashboard.component.js.map

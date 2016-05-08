@@ -1,10 +1,11 @@
+//PWD: app/components/app/
 import { Component } from '@angular/core';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from '@angular/router-deprecated';
 
-import { HeroService } from '../../services/hero/hero.service';
-import { DashboardComponent } from '../dashboard/dashboard.component';
-import { HeroesComponent } from '../heroes/heroes.component';
-import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
+import { HeroService } from 'services/hero/hero.service';
+import { DashboardComponent } from 'components/dashboard/dashboard.component';
+import { HeroesComponent } from 'components/heroes/heroes.component';
+import { HeroDetailComponent } from 'components/hero-detail/hero-detail.component';
 
 @Component({
   selector: 'my-app',
@@ -16,7 +17,7 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
     </nav>
     <router-outlet></router-outlet>
   `,
-  styleUrls: ['app.component.css'],
+  styleUrls: ['app/components/app/app.component.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [
     ROUTER_PROVIDERS,

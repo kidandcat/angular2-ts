@@ -1,14 +1,15 @@
+//PWD: app/components/heroes/
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router-deprecated';
 
-import { Hero } from '../../classes/hero';
-import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
-import { HeroService } from '../../services/hero/hero.service';
+import { Hero } from 'classes/hero';
+import { HeroDetailComponent } from 'components/hero-detail/hero-detail.component';
+import { HeroService } from 'services/hero/hero.service';
 
 @Component({
   selector: 'my-heroes',
-  templateUrl: 'heroes.component.html',
-  styleUrls:  ['heroes.component.css'],
+  templateUrl: 'app/components/heroes/heroes.component.html',
+  styleUrls:  ['app/components/heroes/heroes.component.css'],
   directives: [HeroDetailComponent]
 })
 export class HeroesComponent implements OnInit {
